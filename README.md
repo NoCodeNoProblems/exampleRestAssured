@@ -1,7 +1,8 @@
 # exampleRestAssured
 
+``` java
 @Test
-	public void creditCardsCreateTest() throws InterruptedException, JsonProcessingException {//@formatter:off
+public void creditCardsCreateTest() throws InterruptedException, JsonProcessingException {//@formatter:off
 		Customer customer = new BuilderCustomer()
 				.name("Tokio Marine Test")
 				.build();
@@ -29,3 +30,4 @@
 				.body("cvv", equalTo("399"))
 				.body("holder", equalTo("Tokio Marine Test")).log().all();
 	}
+```
